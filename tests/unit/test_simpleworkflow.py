@@ -5,13 +5,12 @@ import sys
 if sys.version_info > (3,):
     long = int
 
-from gbdxtools.simpleworkflows import Task, Workflow, InvalidInputPort, WorkflowError
+from gbdxtools.simpleworkflows import Task, Workflow, WorkflowError
 from gbdxtools.workflow import Workflow as WorkflowAPI
 from auth_mock import get_mock_gbdx_session
 from gbdxtools import Interface
 import vcr
 import unittest
-import json
 
 """
 How to use the mock_gbdx_session and vcr to create unit tests:

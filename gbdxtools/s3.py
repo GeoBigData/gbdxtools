@@ -60,6 +60,7 @@ class S3(object):
         '''
 
         url = '%s/prefix?duration=36000' % self.base_url
+        print(url)
         r = self.gbdx_connection.get(url)
         r.raise_for_status()
         return r.json()
